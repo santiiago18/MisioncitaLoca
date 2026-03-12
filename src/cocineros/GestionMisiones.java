@@ -123,4 +123,15 @@ public class GestionMisiones {
 
         return respuesta;
     }
+
+    /**
+     * Cuenta las misiones que hay
+     * @return devuelve la cantidad de misiones
+     */
+    public int contarMision(){
+        return this.misiones.size();
+
+    }
+
+
 }

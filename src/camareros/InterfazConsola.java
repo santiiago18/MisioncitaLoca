@@ -135,6 +135,8 @@ public class InterfazConsola {
         return opcion;
     }
 
+
+
     /**
      * Muestra las opciones disponibles del menú principal del gestor de misiones.
      */
@@ -143,7 +145,7 @@ public class InterfazConsola {
         System.out.println("1. Listar Misiones");
         System.out.println("2. Crear Mision");
         System.out.println("3. Buscar Mision");
-        System.out.println("9. Salir");
+        System.out.println("9. Eliminar mision");
         System.out.println("0. Salir");
         System.out.println("¿Que desea hacer?");
     }
