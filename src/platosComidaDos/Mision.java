@@ -10,7 +10,7 @@ public class Mision {
     private boolean completada;
 
     /**
-     *  Constructor platosComidaDos.Mision
+     * Constructor de Mision
      * @param id identificador de la mision
      * @param nombre nombre de la mision
      * @param dificultad dificultad de la mision
@@ -28,7 +28,7 @@ public class Mision {
     }
 
     /**
-     * Id de la mision
+     * Obtiene el ID de la misión.
      * @return id de la mision
      */
     public int getId() {
@@ -36,7 +36,7 @@ public class Mision {
     }
 
     /**
-     * Nombre de la mision
+     * Obtiene el nombre de la misión.
      * @return nombre de la mision
      */
     public String getNombre() {
@@ -44,7 +44,7 @@ public class Mision {
     }
 
     /**
-     * Dificultad de la mision
+     * Obtiene la dificultad de la misión.
      * @return dificultad de la mision
      */
     public String getDificultad() {
@@ -52,41 +52,39 @@ public class Mision {
     }
 
     /**
-     * Nivel que se recomienda de la mision
-     * @return novel recomendado de la mision
+     * Obtiene el nivel que se recomienda para la misión.
+     * @return nivel recomendado de la mision
      */
     public int getNivelRecomendado() {
         return nivelRecomendado;
     }
 
     /**
-     * Recompensa de la experiencia de la mision
-     * @return recompensa de la experiencia de la mision
+     * Obtiene la recompensa de experiencia de la misión.
+     * @return recompensa de experiencia de la mision
      */
     public int getRecompensaExperiencia() {
         return recompensaExperiencia;
     }
 
     /**
-     * Si esta o no está completada la mision
-     * @return devuelve si se completa o no la mision
+     * Comprueba si la misión está completada.
+     * @return true si la misión está completada, false en caso contrario
      */
     public boolean isCompletada() {
         return completada;
     }
 
-
     /**
-     * Texto de todos los atributos de la clase platosComidaDos.Mision
-     * @return texto con todos los atributos de la clase platosComidaDos.Mision
+     * Devuelve una representación en formato texto de todos los atributos de la clase Mision.
+     * @return texto con todos los atributos de la clase Mision
      */
-    public String toString(){
-        String resultado;
-
-        resultado = String.format(new String("platosComidaDos.Mision: id: %d, nombre: %s, dificultas: %d, nivel recomendad: %d,            recompensa experiencia: %d, completada: %b"),
-            id, nombre, dificultad, nivelRecomendado, recompensaExperiencia, completada);
-
-        return resultado;
+    @Override
+    public String toString() {
+        return String.format(
+                "Mision: id: %d, nombre: %s, dificultad: %s, nivel recomendado: %d, recompensa experiencia: %d, completada: %b",
+                id, nombre, dificultad, nivelRecomendado, recompensaExperiencia, completada
+        );
     }
 
 
