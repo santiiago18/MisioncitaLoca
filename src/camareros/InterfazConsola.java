@@ -8,11 +8,8 @@ import java.util.Scanner;
  * Permite al usuario interactuar con el gestor de misiones mediante menús de texto.
  */
 public class InterfazConsola {
-
-    /**
-     * Referencia al gestor que contiene la lógica de negocio de las misiones.
-     */
     private GestionMisiones gestor;
+
 
     /**
      * Constructor de la clase InterfazConsola.
